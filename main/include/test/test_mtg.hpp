@@ -1,6 +1,7 @@
 #ifndef TEST_MTG_HPP
 #define TEST_MTG_HPP
 
+#include <limits>
 #include <cadmium/modeling/devs/coupled.hpp>
 #include <cadmium/lib/iestream.hpp>
 
