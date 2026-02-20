@@ -1,15 +1,15 @@
-#include "include/test/test_uav_comm.hpp"
+#include "include/test/test_network_link.hpp"
 #include <cadmium/simulation/root_coordinator.hpp>
 #include <cadmium/simulation/logger/stdout.hpp>
 
 using namespace cadmium;
 
 int main() {
-    auto model = std::make_shared<TestUAVComm>("test_uav_comm");
+    auto model = std::make_shared<TestNetworkLink>("test_network_link");
     auto rootCoordinator = RootCoordinator(model);
     rootCoordinator.setLogger<STDOUTLogger>(";");
     rootCoordinator.start();
-    rootCoordinator.simulate(25.0);
+    rootCoordinator.simulate(40.0);
     rootCoordinator.stop();
     return 0;
 }

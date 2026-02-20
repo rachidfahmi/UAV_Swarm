@@ -2,22 +2,23 @@
 #define POS_UPDATE_MSG_HPP
 
 #include <iostream>
+#include <cmath>
 
-struct PosUpdate {
-    float x;
-    float y;
+struct PosUpdateMsg {
+    double x, y;
+    PosUpdateMsg(double x = 0.0, double y = 0.0) : x(x), y(y) {}
 
-    PosUpdate() : x(0.0f), y(0.0f) {}
-    PosUpdate(float x, float y) : x(x), y(y) {}
+    double distance() const { return std::sqrt(x * x + y * y); }
 };
 
-std::ostream& operator<<(std::ostream& out, const PosUpdate& p) {
-    out << "(" << p.x << ", " << p.y << ")";
+inline std::ostream& operator<<(std::ostream& out, const PosUpdateMsg& m) {
+    out << m.x << "," << m.y;
     return out;
 }
 
-std::istream& operator>>(std::istream& in, PosUpdate& p) {
-    in >> p.x >> p.y;
+inline std::istream& operator>>(std::istream& in, PosUpdateMsg& m) {
+    char comma;
+    in >> m.x >> comma >> m.y;
     return in;
 }
 
