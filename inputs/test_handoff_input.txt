@@ -1,0 +1,4 @@
+5 Degraded
+10 Available
+15 Disconnected
+25 Disconnected
