@@ -11,7 +11,7 @@ using namespace cadmium;
 struct TestHandoff : public Coupled {
     TestHandoff(const std::string& id) : Coupled(id) {
         auto hc    = addComponent<HandoffCoordinator>("handoff_coordinator");
-        auto input = addComponent<lib::IEStream<LinkState>>(
+        auto input = addComponent<lib::IEStream<LinkStateMsg>>(
             "link_state_input",
             "./inputs/test_handoff_input.txt"
         );

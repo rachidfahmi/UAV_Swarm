@@ -15,18 +15,21 @@ struct UAVCommNodeState {
     bool     transmitting;
     CommMode mode;
     int      relay_target_id;
+    int      pending_packet;    // ← store actual payload
 
     explicit UAVCommNodeState()
         : sigma(std::numeric_limits<double>::infinity()),
           transmitting(false),
           mode(CommMode::Direct),
-          relay_target_id(-1) {}
+          relay_target_id(-1),
+          pending_packet(0) {}
 };
 
 inline std::ostream& operator<<(std::ostream& out, const UAVCommNodeState& s) {
     out << "transmitting:" << (s.transmitting ? "true" : "false")
         << " mode:" << (s.mode == CommMode::Direct ? "direct" : "relay")
         << " relay_target:" << s.relay_target_id
+        << " pending:" << s.pending_packet
         << " sigma:" << s.sigma;
     return out;
 }
@@ -47,18 +50,19 @@ public:
     void externalTransition(UAVCommNodeState& s, double e) const override {
         s.sigma -= e;
 
-        // handoff_in always updates mode, never interrupts transmission
+        // handoff_in always updates mode silently, never interrupts
         if (!handoff_in->empty()) {
-            auto msg = handoff_in->getBag().back();
-            s.mode            = CommMode::Relay;
+            auto msg        = handoff_in->getBag().back();
+            s.mode          = CommMode::Relay;
             s.relay_target_id = msg.target_uav_id;
         }
 
-        // data_packet: start transmitting only if idle; drop if busy
+        // data_packet: start if idle, drop if busy
         if (!data_packet->empty()) {
             if (!s.transmitting) {
-                s.transmitting = true;
-                s.sigma        = 1.0;   // T_tx = 1s
+                s.pending_packet = data_packet->getBag().back();  // ← store payload
+                s.transmitting   = true;
+                s.sigma          = 1.0;
             }
             // else: drop silently
         }
@@ -70,8 +74,7 @@ public:
     }
 
     void output(const UAVCommNodeState& s) const override {
-        // send 1 if direct, 2 if relay (encodes destination)
-        tx_out->addMessage(s.mode == CommMode::Direct ? 1 : 2);
+        tx_out->addMessage(s.pending_packet);   // ← forward actual packet, not 1/2
     }
 
     [[nodiscard]] double timeAdvance(const UAVCommNodeState& s) const override {

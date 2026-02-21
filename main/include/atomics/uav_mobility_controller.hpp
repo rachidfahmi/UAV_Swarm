@@ -2,7 +2,7 @@
 #define UAV_MOBILITY_CONTROLLER_HPP
 
 #include <iostream>
-#include <cmath>
+#include <limits>
 #include <cadmium/modeling/devs/atomic.hpp>
 #include "../messages/pos_update_msg.hpp"
 
@@ -10,15 +10,10 @@ using namespace cadmium;
 
 struct UAVMobilityControllerState {
     double sigma;
-    float  x;
-    float  y;
-    float  vx;   // velocity in x (m per step)
-    float  vy;   // velocity in y (m per step)
+    double x, y;
 
-    explicit UAVMobilityControllerState(
-        float x0 = 10.0f, float y0 = 0.0f,
-        float vx = 10.0f, float vy = 0.0f
-    ) : sigma(5.0), x(x0), y(y0), vx(vx), vy(vy) {}
+    explicit UAVMobilityControllerState(double x = 0.0, double y = 0.0)
+        : sigma(0.0), x(x), y(y) {}
 };
 
 inline std::ostream& operator<<(std::ostream& out, const UAVMobilityControllerState& s) {
@@ -28,31 +23,21 @@ inline std::ostream& operator<<(std::ostream& out, const UAVMobilityControllerSt
 
 class UAVMobilityController : public Atomic<UAVMobilityControllerState> {
 public:
-    Port<PosUpdate> pos_update;
+    Port<PosUpdateMsg> pos_update;   // ← was Port<PosUpdate>
 
-    // x0, y0 = start position; vx, vy = displacement per 5s step
-    UAVMobilityController(const std::string& id,
-                          float x0 = 10.0f, float y0 = 0.0f,
-                          float vx = 10.0f, float vy = 0.0f)
-        : Atomic<UAVMobilityControllerState>(
-            id, UAVMobilityControllerState(x0, y0, vx, vy)) {
-        pos_update = addOutPort<PosUpdate>("pos_update");
+    UAVMobilityController(const std::string& id, double x = 0.0, double y = 0.0)
+        : Atomic<UAVMobilityControllerState>(id, UAVMobilityControllerState(x, y)) {
+        pos_update = addOutPort<PosUpdateMsg>("pos_update");
     }
 
-    // No inputs
-    void externalTransition(UAVMobilityControllerState& s, double e) const override {
-        s.sigma -= e;
-    }
+    void externalTransition(UAVMobilityControllerState& s, double e) const override {}
 
-    // Advance position every 5s, emit update, repeat
     void internalTransition(UAVMobilityControllerState& s) const override {
-        s.x    += s.vx;
-        s.y    += s.vy;
         s.sigma = 5.0;
     }
 
     void output(const UAVMobilityControllerState& s) const override {
-        pos_update->addMessage(PosUpdate(s.x, s.y));
+        pos_update->addMessage(PosUpdateMsg(s.x, s.y));   // ← was PosUpdate
     }
 
     [[nodiscard]] double timeAdvance(const UAVMobilityControllerState& s) const override {

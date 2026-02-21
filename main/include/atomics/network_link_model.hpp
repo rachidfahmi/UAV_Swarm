@@ -14,8 +14,8 @@ enum class NLPhase { Available, Degraded, Disconnected, Forwarding, Notify };
 struct NetworkLinkModelState {
     double    sigma;
     NLPhase   phase;
-    LinkState stable_state;   // last stable link state (return target for Forwarding)
-    LinkState new_state;      // target state for Notify transition
+    LinkState stable_state;
+    LinkState new_state;
     double    d1, d2;
     int       pending_packet;
 
@@ -44,39 +44,31 @@ inline std::ostream& operator<<(std::ostream& out, const NetworkLinkModelState& 
 }
 
 class NetworkLinkModel : public Atomic<NetworkLinkModelState> {
+    int uav_id_;    // ← stored as class member, not in state
 public:
-    Port<int>          tx_in;
-    Port<PosUpdateMsg> pos_update;
-    Port<int>          rx_packet;
-    Port<LinkState>    link_state_change;
+    Port<int>           tx_in;
+    Port<PosUpdateMsg>  pos_update;
+    Port<int>           rx_packet;
+    Port<LinkStateMsg>  link_state_change;   // ← was Port<LinkState>
 
-    NetworkLinkModel(const std::string& id, double d1 = 100.0, double d2 = 200.0)
-        : Atomic<NetworkLinkModelState>(id, NetworkLinkModelState(d1, d2)) {
+    NetworkLinkModel(const std::string& id, int uav_id = 0,
+                     double d1 = 100.0, double d2 = 200.0)
+        : Atomic<NetworkLinkModelState>(id, NetworkLinkModelState(d1, d2)),
+          uav_id_(uav_id) {
         tx_in             = addInPort<int>("tx_in");
         pos_update        = addInPort<PosUpdateMsg>("pos_update");
         rx_packet         = addOutPort<int>("rx_packet");
-        link_state_change = addOutPort<LinkState>("link_state_change");
+        link_state_change = addOutPort<LinkStateMsg>("link_state_change");
     }
 
     void externalTransition(NetworkLinkModelState& s, double e) const override {
         s.sigma -= e;
 
-        // Transient states: ignore all external inputs
+        // Transient states: ignore all external inputs (spec §2.4)
         if (s.phase == NLPhase::Forwarding || s.phase == NLPhase::Notify)
             return;
 
-        // tx_in: forward if not Disconnected, drop silently if Disconnected
-        if (!tx_in->empty()) {
-            if (s.phase != NLPhase::Disconnected) {
-                s.pending_packet = tx_in->getBag().back();
-                s.phase          = NLPhase::Forwarding;
-                s.sigma          = 0.0;
-            }
-            // Disconnected → drop, no state change
-            return;
-        }
-
-        // pos_update: check thresholds, emit Notify if crossed
+        // ── pos_update FIRST — may change phase ──────────────────────────────
         if (!pos_update->empty()) {
             double d = pos_update->getBag().back().distance();
 
@@ -93,17 +85,25 @@ public:
                 s.phase     = NLPhase::Notify;
                 s.sigma     = 0.0;
             }
-            // else: no threshold crossed → stay, no output
+        }
+
+        // ── tx_in SECOND — evaluated against resulting phase ─────────────────
+        // Skip if pos_update just pushed us into a transient state
+        if (!tx_in->empty() && s.phase != NLPhase::Notify) {
+            if (s.phase != NLPhase::Disconnected) {
+                s.pending_packet = tx_in->getBag().back();
+                s.phase          = NLPhase::Forwarding;
+                s.sigma          = 0.0;
+            }
+            // Disconnected → drop silently, no state change
         }
     }
 
     void internalTransition(NetworkLinkModelState& s) const override {
         if (s.phase == NLPhase::Forwarding) {
-            // Return to the stable state we came from
             s.phase = phaseFrom(s.stable_state);
             s.sigma = std::numeric_limits<double>::infinity();
         } else if (s.phase == NLPhase::Notify) {
-            // Commit transition to new stable state
             s.stable_state = s.new_state;
             s.phase        = phaseFrom(s.new_state);
             s.sigma        = std::numeric_limits<double>::infinity();
@@ -114,7 +114,7 @@ public:
         if (s.phase == NLPhase::Forwarding)
             rx_packet->addMessage(s.pending_packet);
         else if (s.phase == NLPhase::Notify)
-            link_state_change->addMessage(s.new_state);
+            link_state_change->addMessage(LinkStateMsg(uav_id_, s.new_state));  // ← uav_id stamped
     }
 
     [[nodiscard]] double timeAdvance(const NetworkLinkModelState& s) const override {
