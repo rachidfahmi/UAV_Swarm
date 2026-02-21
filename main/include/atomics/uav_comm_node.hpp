@@ -15,7 +15,7 @@ struct UAVCommNodeState {
     bool     transmitting;
     CommMode mode;
     int      relay_target_id;
-    int      pending_packet;    // ← store actual payload
+    int      pending_packet;
 
     explicit UAVCommNodeState()
         : sigma(std::numeric_limits<double>::infinity()),
@@ -25,7 +25,8 @@ struct UAVCommNodeState {
           pending_packet(0) {}
 };
 
-inline std::ostream& operator<<(std::ostream& out, const UAVCommNodeState& s) {
+inline std::ostream& operator<<(std::ostream& out,
+                                const UAVCommNodeState& s) {
     out << "transmitting:" << (s.transmitting ? "true" : "false")
         << " mode:" << (s.mode == CommMode::Direct ? "direct" : "relay")
         << " relay_target:" << s.relay_target_id
@@ -35,13 +36,15 @@ inline std::ostream& operator<<(std::ostream& out, const UAVCommNodeState& s) {
 }
 
 class UAVCommNode : public Atomic<UAVCommNodeState> {
+    int uav_id_;   // own identity — only accept handoffs addressed to us
 public:
     Port<int>        data_packet;
     Port<HandoffMsg> handoff_in;
     Port<int>        tx_out;
 
-    UAVCommNode(const std::string& id)
-        : Atomic<UAVCommNodeState>(id, UAVCommNodeState()) {
+    UAVCommNode(const std::string& id, int uav_id = 0)
+        : Atomic<UAVCommNodeState>(id, UAVCommNodeState()),
+          uav_id_(uav_id) {
         data_packet = addInPort<int>("data_packet");
         handoff_in  = addInPort<HandoffMsg>("handoff_in");
         tx_out      = addOutPort<int>("tx_out");
@@ -50,21 +53,22 @@ public:
     void externalTransition(UAVCommNodeState& s, double e) const override {
         s.sigma -= e;
 
-        // handoff_in always updates mode silently, never interrupts
+        // Only apply handoff if it's addressed to this UAV
         if (!handoff_in->empty()) {
-            auto msg        = handoff_in->getBag().back();
-            s.mode          = CommMode::Relay;
-            s.relay_target_id = msg.target_uav_id;
+            auto msg = handoff_in->getBag().back();
+            if (msg.affected_uav_id == uav_id_) {
+                s.mode            = CommMode::Relay;
+                s.relay_target_id = msg.relay_target_id;
+            }
         }
 
         // data_packet: start if idle, drop if busy
         if (!data_packet->empty()) {
             if (!s.transmitting) {
-                s.pending_packet = data_packet->getBag().back();  // ← store payload
+                s.pending_packet = data_packet->getBag().back();
                 s.transmitting   = true;
                 s.sigma          = 1.0;
             }
-            // else: drop silently
         }
     }
 
@@ -74,10 +78,11 @@ public:
     }
 
     void output(const UAVCommNodeState& s) const override {
-        tx_out->addMessage(s.pending_packet);   // ← forward actual packet, not 1/2
+        tx_out->addMessage(s.pending_packet);
     }
 
-    [[nodiscard]] double timeAdvance(const UAVCommNodeState& s) const override {
+    [[nodiscard]] double timeAdvance(
+        const UAVCommNodeState& s) const override {
         return s.sigma;
     }
 };
