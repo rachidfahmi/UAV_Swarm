@@ -15,7 +15,7 @@ struct UAVMobilityControllerState {
 
     explicit UAVMobilityControllerState(
         double x=0, double y=0, double vx=0, double vy=0)
-        : sigma(0.0), x(x), y(y), vx(vx), vy(vy) {}
+        : sigma(5.0), x(x), y(y), vx(vx), vy(vy) {}
 };
 
 inline std::ostream& operator<<(std::ostream& out,

@@ -41,6 +41,7 @@ inline std::ostream& operator<<(std::ostream& out, const LinkStateMsg& m) {
 inline std::istream& operator>>(std::istream& in, LinkStateMsg& m) {
     char comma;
     in >> m.uav_id >> comma >> m.state;
+    if (comma != ',') in.setstate(std::ios::failbit);
     return in;
 }
 // ─────────────────────────────────────────────────────────────────────────────
