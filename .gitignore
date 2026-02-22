@@ -6,4 +6,3 @@ managed_components
 bin
 *.csv
 *.log
-logs/
