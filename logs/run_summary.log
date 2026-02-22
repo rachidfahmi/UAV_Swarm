@@ -1,0 +1,67 @@
+=== Building ===
+-- Building without ESP32
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring for non-ESP32
+-- Configuring done (1.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/rach/UAV_Swarm/build
+[ 50%] Building CXX object main/CMakeFiles/UAV_Swarm.dir/main.cpp.o
+[100%] Linking CXX executable /home/rach/UAV_Swarm/bin/UAV_Swarm
+[100%] Built target UAV_Swarm
+Compilation done. Executable in the bin folder
+
+=== Experiment 1: Atomic Model Tests ===
+[ 50%] Building CXX object main/CMakeFiles/UAV_Swarm.dir/main.cpp.o
+1a done -> logs/exp1a_mission_task_generator.log
+[ 50%] Building CXX object main/CMakeFiles/UAV_Swarm.dir/main.cpp.o
+1b done -> logs/exp1b_uav_sensor_module.log
+[ 50%] Building CXX object main/CMakeFiles/UAV_Swarm.dir/main.cpp.o
+[100%] Linking CXX executable /home/rach/UAV_Swarm/bin/UAV_Swarm
+[100%] Built target UAV_Swarm
+1c done -> logs/exp1c_network_link_model.log
+[ 50%] Building CXX object main/CMakeFiles/UAV_Swarm.dir/main.cpp.o
+1d done -> logs/exp1d_ground_station_aggregator.log
+[ 50%] Building CXX object main/CMakeFiles/UAV_Swarm.dir/main.cpp.o
+1e done -> logs/exp1e_handoff_coordinator.log
+[ 50%] Building CXX object main/CMakeFiles/UAV_Swarm.dir/main.cpp.o
+1f done -> logs/exp1f_uav_comm_node.log
+[ 50%] Building CXX object main/CMakeFiles/UAV_Swarm.dir/main.cpp.o
+[100%] Linking CXX executable /home/rach/UAV_Swarm/bin/UAV_Swarm
+[100%] Built target UAV_Swarm
+1g done -> logs/exp1g_uav_mobility_controller.log
+
+=== Experiment 2: Baseline — No Handoff ===
+[ 50%] Building CXX object main/CMakeFiles/UAV_Swarm.dir/main.cpp.o
+[100%] Linking CXX executable /home/rach/UAV_Swarm/bin/UAV_Swarm
+[100%] Built target UAV_Swarm
+2 done -> logs/exp2_baseline_no_handoff.log
+
+=== Experiment 3: With Handoff ===
+[ 50%] Building CXX object main/CMakeFiles/UAV_Swarm.dir/main.cpp.o
+[100%] Linking CXX executable /home/rach/UAV_Swarm/bin/UAV_Swarm
+[100%] Built target UAV_Swarm
+3 done -> logs/exp3_with_handoff.log
+
+=== All logs saved in ./logs/ ===
+total 136K
+-rw-r--r-- 1 rach rach  28K Feb 21 14:37 exp1a_mission_task_generator.log
+-rw-r--r-- 1 rach rach  28K Feb 21 14:37 exp1b_uav_sensor_module.log
+-rw-r--r-- 1 rach rach 1.7K Feb 21 14:37 exp1c_network_link_model.log
+-rw-r--r-- 1 rach rach 1.7K Feb 21 14:37 exp1d_ground_station_aggregator.log
+-rw-r--r-- 1 rach rach 1.7K Feb 21 14:37 exp1e_handoff_coordinator.log
+-rw-r--r-- 1 rach rach 1.7K Feb 21 14:37 exp1f_uav_comm_node.log
+-rw-r--r-- 1 rach rach  713 Feb 21 14:37 exp1g_uav_mobility_controller.log
+-rw-r--r-- 1 rach rach  28K Feb 21 14:37 exp2_baseline_no_handoff.log
+-rw-r--r-- 1 rach rach  28K Feb 21 14:37 exp3_with_handoff.log
+-rw-r--r-- 1 rach rach 2.5K Feb 21 14:37 run_summary.log

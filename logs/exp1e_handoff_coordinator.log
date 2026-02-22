@@ -1,0 +1,33 @@
+time;model_id;model_name;port_name;data
+[33m0;1;pos_input;;5[0m
+[33m0;2;tx_input;;10[0m
+[33m0;3;network_link_model;;phase:Available stable:Available sigma:inf[0m
+[32m5;1;pos_input;out;0,50[0m
+[33m5;1;pos_input;;10[0m
+[33m5;3;network_link_model;;phase:Available stable:Available sigma:inf[0m
+[32m10;2;tx_input;out;1[0m
+[33m10;2;tx_input;;20[0m
+[33m10;3;network_link_model;;phase:Forwarding stable:Available sigma:0[0m
+[32m10;3;network_link_model;rx_packet;1[0m
+[33m10;3;network_link_model;;phase:Available stable:Available sigma:inf[0m
+[32m15;1;pos_input;out;0,120[0m
+[33m15;1;pos_input;;10[0m
+[33m15;3;network_link_model;;phase:Notify stable:Available sigma:0[0m
+[32m15;3;network_link_model;link_state_change;0,Degraded[0m
+[33m15;3;network_link_model;;phase:Degraded stable:Degraded sigma:inf[0m
+[32m25;1;pos_input;out;0,250[0m
+[33m25;1;pos_input;;10[0m
+[33m25;3;network_link_model;;phase:Notify stable:Degraded sigma:0[0m
+[32m25;3;network_link_model;link_state_change;0,Disconnected[0m
+[33m25;3;network_link_model;;phase:Disconnected stable:Disconnected sigma:inf[0m
+[32m30;2;tx_input;out;1[0m
+[33m30;2;tx_input;;inf[0m
+[33m30;3;network_link_model;;phase:Disconnected stable:Disconnected sigma:inf[0m
+[32m35;1;pos_input;out;0,50[0m
+[33m35;1;pos_input;;inf[0m
+[33m35;3;network_link_model;;phase:Notify stable:Disconnected sigma:0[0m
+[32m35;3;network_link_model;link_state_change;0,Available[0m
+[33m35;3;network_link_model;;phase:Available stable:Available sigma:inf[0m
+[33m35;1;pos_input;;inf[0m
+[33m35;2;tx_input;;inf[0m
+[33m35;3;network_link_model;;phase:Available stable:Available sigma:inf[0m

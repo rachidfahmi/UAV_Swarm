@@ -1,0 +1,13 @@
+time;model_id;model_name;port_name;data
+[33m0;1;uav_mobility_controller;;pos:(60,0) sigma:5[0m
+[32m5;1;uav_mobility_controller;pos_update;60,0[0m
+[33m5;1;uav_mobility_controller;;pos:(60,0) sigma:5[0m
+[32m10;1;uav_mobility_controller;pos_update;60,0[0m
+[33m10;1;uav_mobility_controller;;pos:(60,0) sigma:5[0m
+[32m15;1;uav_mobility_controller;pos_update;60,0[0m
+[33m15;1;uav_mobility_controller;;pos:(60,0) sigma:5[0m
+[32m20;1;uav_mobility_controller;pos_update;60,0[0m
+[33m20;1;uav_mobility_controller;;pos:(60,0) sigma:5[0m
+[32m25;1;uav_mobility_controller;pos_update;60,0[0m
+[33m25;1;uav_mobility_controller;;pos:(60,0) sigma:5[0m
+[33m25;1;uav_mobility_controller;;pos:(60,0) sigma:5[0m
