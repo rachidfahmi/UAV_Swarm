@@ -1,480 +1,471 @@
 time;model_id;model_name;port_name;data
 [33m0;1;ground_station_aggregator;;count:0 reporting:false sigma:inf[0m
-[33m0;3;handoff_coordinator;;issuing:false affected:-1 relay:-1 sigma:inf[0m
-[33m0;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m0;5;nl0;;phase:Available stable:Available sigma:inf[0m
-[33m0;7;comm_node;;transmitting:false mode:direct relay_target:-1 pending:0 sigma:inf[0m
-[33m0;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[33m0;9;sensor_module;;sensing:false sigma:inf[0m
-[33m0;11;comm_node;;transmitting:false mode:direct relay_target:-1 pending:0 sigma:inf[0m
-[33m0;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m0;13;sensor_module;;sensing:false sigma:inf[0m
-[33m0;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[33m0;16;comm_node;;transmitting:false mode:direct relay_target:-1 pending:0 sigma:inf[0m
-[33m0;17;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m0;18;sensor_module;;sensing:false sigma:inf[0m
-[33m0;19;mission_task_generator;;sigma:60[0m
-[33m5;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m5;5;nl0;;phase:Available stable:Available sigma:inf[0m
-[32m5;8;mobility_controller;pos_update;40,0[0m
-[33m5;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[32m5;12;mobility_controller;pos_update;30,0[0m
-[33m5;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m5;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[32m5;17;mobility_controller;pos_update;30,0[0m
-[33m5;17;mobility_controller;;pos:(40,0) sigma:5[0m
-[33m10;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m10;5;nl0;;phase:Available stable:Available sigma:inf[0m
-[32m10;8;mobility_controller;pos_update;40,0[0m
-[33m10;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[32m10;12;mobility_controller;pos_update;30,0[0m
-[33m10;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m10;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[32m10;17;mobility_controller;pos_update;40,0[0m
-[33m10;17;mobility_controller;;pos:(50,0) sigma:5[0m
-[33m15;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m15;5;nl0;;phase:Available stable:Available sigma:inf[0m
-[32m15;8;mobility_controller;pos_update;40,0[0m
-[33m15;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[32m15;12;mobility_controller;pos_update;30,0[0m
-[33m15;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m15;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[32m15;17;mobility_controller;pos_update;50,0[0m
-[33m15;17;mobility_controller;;pos:(60,0) sigma:5[0m
-[33m20;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m20;5;nl0;;phase:Notify stable:Available sigma:0[0m
-[32m20;8;mobility_controller;pos_update;40,0[0m
-[33m20;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[32m20;12;mobility_controller;pos_update;30,0[0m
-[33m20;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m20;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[32m20;17;mobility_controller;pos_update;60,0[0m
-[33m20;17;mobility_controller;;pos:(70,0) sigma:5[0m
-[33m20;3;handoff_coordinator;;issuing:false affected:-1 relay:-1 sigma:inf[0m
-[32m20;5;nl0;link_state_change;0,Degraded[0m
-[33m20;5;nl0;;phase:Degraded stable:Degraded sigma:inf[0m
-[33m25;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m25;5;nl0;;phase:Degraded stable:Degraded sigma:inf[0m
-[32m25;8;mobility_controller;pos_update;40,0[0m
-[33m25;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[32m25;12;mobility_controller;pos_update;30,0[0m
-[33m25;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m25;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[32m25;17;mobility_controller;pos_update;70,0[0m
-[33m25;17;mobility_controller;;pos:(80,0) sigma:5[0m
-[33m30;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m30;5;nl0;;phase:Degraded stable:Degraded sigma:inf[0m
-[32m30;8;mobility_controller;pos_update;40,0[0m
-[33m30;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[32m30;12;mobility_controller;pos_update;30,0[0m
-[33m30;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m30;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[32m30;17;mobility_controller;pos_update;80,0[0m
-[33m30;17;mobility_controller;;pos:(90,0) sigma:5[0m
-[33m35;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m35;5;nl0;;phase:Degraded stable:Degraded sigma:inf[0m
-[32m35;8;mobility_controller;pos_update;40,0[0m
-[33m35;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[32m35;12;mobility_controller;pos_update;30,0[0m
-[33m35;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m35;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[32m35;17;mobility_controller;pos_update;90,0[0m
-[33m35;17;mobility_controller;;pos:(100,0) sigma:5[0m
-[33m40;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m40;5;nl0;;phase:Degraded stable:Degraded sigma:inf[0m
-[32m40;8;mobility_controller;pos_update;40,0[0m
-[33m40;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[32m40;12;mobility_controller;pos_update;30,0[0m
-[33m40;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m40;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[32m40;17;mobility_controller;pos_update;100,0[0m
-[33m40;17;mobility_controller;;pos:(110,0) sigma:5[0m
-[33m45;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m45;5;nl0;;phase:Notify stable:Degraded sigma:0[0m
-[32m45;8;mobility_controller;pos_update;40,0[0m
-[33m45;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[32m45;12;mobility_controller;pos_update;30,0[0m
-[33m45;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m45;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[32m45;17;mobility_controller;pos_update;110,0[0m
-[33m45;17;mobility_controller;;pos:(120,0) sigma:5[0m
-[33m45;3;handoff_coordinator;;issuing:true affected:0 relay:1 sigma:1[0m
-[32m45;5;nl0;link_state_change;0,Disconnected[0m
-[33m45;5;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
-[32m46;3;handoff_coordinator;handoff_in;affected:0 relay:1[0m
-[33m46;3;handoff_coordinator;;issuing:false affected:-1 relay:-1 sigma:inf[0m
-[33m46;7;comm_node;;transmitting:false mode:direct relay_target:-1 pending:0 sigma:inf[0m
-[33m46;11;comm_node;;transmitting:false mode:direct relay_target:-1 pending:0 sigma:inf[0m
-[33m46;16;comm_node;;transmitting:false mode:relay relay_target:1 pending:0 sigma:inf[0m
-[33m50;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m50;5;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
-[32m50;8;mobility_controller;pos_update;40,0[0m
-[33m50;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[32m50;12;mobility_controller;pos_update;30,0[0m
-[33m50;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m50;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[32m50;17;mobility_controller;pos_update;120,0[0m
-[33m50;17;mobility_controller;;pos:(130,0) sigma:5[0m
-[33m55;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m55;5;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
-[32m55;8;mobility_controller;pos_update;40,0[0m
-[33m55;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[32m55;12;mobility_controller;pos_update;30,0[0m
-[33m55;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m55;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[32m55;17;mobility_controller;pos_update;130,0[0m
-[33m55;17;mobility_controller;;pos:(140,0) sigma:5[0m
-[33m60;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m60;5;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
-[32m60;8;mobility_controller;pos_update;40,0[0m
-[33m60;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[33m60;9;sensor_module;;sensing:true sigma:5[0m
-[32m60;12;mobility_controller;pos_update;30,0[0m
-[33m60;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m60;13;sensor_module;;sensing:true sigma:5[0m
-[33m60;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[32m60;17;mobility_controller;pos_update;140,0[0m
-[33m60;17;mobility_controller;;pos:(150,0) sigma:5[0m
-[33m60;18;sensor_module;;sensing:true sigma:5[0m
-[32m60;19;mission_task_generator;task_assigned;1[0m
-[33m60;19;mission_task_generator;;sigma:60[0m
-[33m65;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m65;5;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
-[33m65;7;comm_node;;transmitting:true mode:direct relay_target:-1 pending:1 sigma:1[0m
-[32m65;8;mobility_controller;pos_update;40,0[0m
-[33m65;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[32m65;9;sensor_module;data_packet;1[0m
-[33m65;9;sensor_module;;sensing:false sigma:inf[0m
-[33m65;11;comm_node;;transmitting:true mode:direct relay_target:-1 pending:1 sigma:1[0m
-[32m65;12;mobility_controller;pos_update;30,0[0m
-[33m65;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[32m65;13;sensor_module;data_packet;1[0m
-[33m65;13;sensor_module;;sensing:false sigma:inf[0m
-[33m65;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[33m65;16;comm_node;;transmitting:true mode:relay relay_target:1 pending:1 sigma:1[0m
-[32m65;17;mobility_controller;pos_update;150,0[0m
-[33m65;17;mobility_controller;;pos:(160,0) sigma:5[0m
-[32m65;18;sensor_module;data_packet;1[0m
-[33m65;18;sensor_module;;sensing:false sigma:inf[0m
-[33m66;4;nl1;;phase:Forwarding stable:Available sigma:0[0m
-[33m66;5;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
-[32m66;7;comm_node;tx_out;1[0m
-[33m66;7;comm_node;;transmitting:false mode:direct relay_target:-1 pending:1 sigma:inf[0m
-[32m66;11;comm_node;tx_out;1[0m
-[33m66;11;comm_node;;transmitting:false mode:direct relay_target:-1 pending:1 sigma:inf[0m
-[33m66;14;nl2;;phase:Forwarding stable:Available sigma:0[0m
-[32m66;16;comm_node;tx_out;1[0m
-[33m66;16;comm_node;;transmitting:false mode:relay relay_target:1 pending:1 sigma:inf[0m
+[33m0;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m0;4;nl0;;phase:Available stable:Available sigma:inf[0m
+[33m0;6;comm_node;;transmitting:false mode:direct relay_target:-1 pending:0 sigma:inf[0m
+[33m0;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[33m0;8;sensor_module;;sensing:false sigma:inf[0m
+[33m0;10;comm_node;;transmitting:false mode:direct relay_target:-1 pending:0 sigma:inf[0m
+[33m0;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m0;12;sensor_module;;sensing:false sigma:inf[0m
+[33m0;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[33m0;15;comm_node;;transmitting:false mode:direct relay_target:-1 pending:0 sigma:inf[0m
+[33m0;16;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m0;17;sensor_module;;sensing:false sigma:inf[0m
+[33m0;18;mission_task_generator;;sigma:60[0m
+[33m5;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m5;4;nl0;;phase:Available stable:Available sigma:inf[0m
+[32m5;7;mobility_controller;pos_update;40,0[0m
+[33m5;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[32m5;11;mobility_controller;pos_update;30,0[0m
+[33m5;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m5;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[32m5;16;mobility_controller;pos_update;30,0[0m
+[33m5;16;mobility_controller;;pos:(40,0) sigma:5[0m
+[33m10;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m10;4;nl0;;phase:Available stable:Available sigma:inf[0m
+[32m10;7;mobility_controller;pos_update;40,0[0m
+[33m10;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[32m10;11;mobility_controller;pos_update;30,0[0m
+[33m10;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m10;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[32m10;16;mobility_controller;pos_update;40,0[0m
+[33m10;16;mobility_controller;;pos:(50,0) sigma:5[0m
+[33m15;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m15;4;nl0;;phase:Available stable:Available sigma:inf[0m
+[32m15;7;mobility_controller;pos_update;40,0[0m
+[33m15;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[32m15;11;mobility_controller;pos_update;30,0[0m
+[33m15;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m15;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[32m15;16;mobility_controller;pos_update;50,0[0m
+[33m15;16;mobility_controller;;pos:(60,0) sigma:5[0m
+[33m20;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m20;4;nl0;;phase:Notify stable:Available sigma:0[0m
+[32m20;7;mobility_controller;pos_update;40,0[0m
+[33m20;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[32m20;11;mobility_controller;pos_update;30,0[0m
+[33m20;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m20;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[32m20;16;mobility_controller;pos_update;60,0[0m
+[33m20;16;mobility_controller;;pos:(70,0) sigma:5[0m
+[32m20;4;nl0;link_state_change;0,Degraded[0m
+[33m20;4;nl0;;phase:Degraded stable:Degraded sigma:inf[0m
+[33m25;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m25;4;nl0;;phase:Degraded stable:Degraded sigma:inf[0m
+[32m25;7;mobility_controller;pos_update;40,0[0m
+[33m25;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[32m25;11;mobility_controller;pos_update;30,0[0m
+[33m25;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m25;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[32m25;16;mobility_controller;pos_update;70,0[0m
+[33m25;16;mobility_controller;;pos:(80,0) sigma:5[0m
+[33m30;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m30;4;nl0;;phase:Degraded stable:Degraded sigma:inf[0m
+[32m30;7;mobility_controller;pos_update;40,0[0m
+[33m30;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[32m30;11;mobility_controller;pos_update;30,0[0m
+[33m30;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m30;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[32m30;16;mobility_controller;pos_update;80,0[0m
+[33m30;16;mobility_controller;;pos:(90,0) sigma:5[0m
+[33m35;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m35;4;nl0;;phase:Degraded stable:Degraded sigma:inf[0m
+[32m35;7;mobility_controller;pos_update;40,0[0m
+[33m35;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[32m35;11;mobility_controller;pos_update;30,0[0m
+[33m35;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m35;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[32m35;16;mobility_controller;pos_update;90,0[0m
+[33m35;16;mobility_controller;;pos:(100,0) sigma:5[0m
+[33m40;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m40;4;nl0;;phase:Degraded stable:Degraded sigma:inf[0m
+[32m40;7;mobility_controller;pos_update;40,0[0m
+[33m40;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[32m40;11;mobility_controller;pos_update;30,0[0m
+[33m40;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m40;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[32m40;16;mobility_controller;pos_update;100,0[0m
+[33m40;16;mobility_controller;;pos:(110,0) sigma:5[0m
+[33m45;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m45;4;nl0;;phase:Notify stable:Degraded sigma:0[0m
+[32m45;7;mobility_controller;pos_update;40,0[0m
+[33m45;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[32m45;11;mobility_controller;pos_update;30,0[0m
+[33m45;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m45;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[32m45;16;mobility_controller;pos_update;110,0[0m
+[33m45;16;mobility_controller;;pos:(120,0) sigma:5[0m
+[32m45;4;nl0;link_state_change;0,Disconnected[0m
+[33m45;4;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
+[33m50;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m50;4;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
+[32m50;7;mobility_controller;pos_update;40,0[0m
+[33m50;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[32m50;11;mobility_controller;pos_update;30,0[0m
+[33m50;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m50;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[32m50;16;mobility_controller;pos_update;120,0[0m
+[33m50;16;mobility_controller;;pos:(130,0) sigma:5[0m
+[33m55;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m55;4;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
+[32m55;7;mobility_controller;pos_update;40,0[0m
+[33m55;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[32m55;11;mobility_controller;pos_update;30,0[0m
+[33m55;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m55;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[32m55;16;mobility_controller;pos_update;130,0[0m
+[33m55;16;mobility_controller;;pos:(140,0) sigma:5[0m
+[33m60;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m60;4;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
+[32m60;7;mobility_controller;pos_update;40,0[0m
+[33m60;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[33m60;8;sensor_module;;sensing:true sigma:5[0m
+[32m60;11;mobility_controller;pos_update;30,0[0m
+[33m60;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m60;12;sensor_module;;sensing:true sigma:5[0m
+[33m60;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[32m60;16;mobility_controller;pos_update;140,0[0m
+[33m60;16;mobility_controller;;pos:(150,0) sigma:5[0m
+[33m60;17;sensor_module;;sensing:true sigma:5[0m
+[32m60;18;mission_task_generator;task_assigned;1[0m
+[33m60;18;mission_task_generator;;sigma:60[0m
+[33m65;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m65;4;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
+[33m65;6;comm_node;;transmitting:true mode:direct relay_target:-1 pending:1 sigma:1[0m
+[32m65;7;mobility_controller;pos_update;40,0[0m
+[33m65;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[32m65;8;sensor_module;data_packet;1[0m
+[33m65;8;sensor_module;;sensing:false sigma:inf[0m
+[33m65;10;comm_node;;transmitting:true mode:direct relay_target:-1 pending:1 sigma:1[0m
+[32m65;11;mobility_controller;pos_update;30,0[0m
+[33m65;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[32m65;12;sensor_module;data_packet;1[0m
+[33m65;12;sensor_module;;sensing:false sigma:inf[0m
+[33m65;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[33m65;15;comm_node;;transmitting:true mode:direct relay_target:-1 pending:1 sigma:1[0m
+[32m65;16;mobility_controller;pos_update;150,0[0m
+[33m65;16;mobility_controller;;pos:(160,0) sigma:5[0m
+[32m65;17;sensor_module;data_packet;1[0m
+[33m65;17;sensor_module;;sensing:false sigma:inf[0m
+[33m66;3;nl1;;phase:Forwarding stable:Available sigma:0[0m
+[33m66;4;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
+[32m66;6;comm_node;tx_out;1[0m
+[33m66;6;comm_node;;transmitting:false mode:direct relay_target:-1 pending:1 sigma:inf[0m
+[32m66;10;comm_node;tx_out;1[0m
+[33m66;10;comm_node;;transmitting:false mode:direct relay_target:-1 pending:1 sigma:inf[0m
+[33m66;13;nl2;;phase:Forwarding stable:Available sigma:0[0m
+[32m66;15;comm_node;tx_out;1[0m
+[33m66;15;comm_node;;transmitting:false mode:direct relay_target:-1 pending:1 sigma:inf[0m
 [33m66;1;ground_station_aggregator;;count:2 reporting:false sigma:inf[0m
-[32m66;4;nl1;rx_packet;1[0m
-[33m66;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[32m66;14;nl2;rx_packet;1[0m
-[33m66;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[33m70;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m70;5;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
-[32m70;8;mobility_controller;pos_update;40,0[0m
-[33m70;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[32m70;12;mobility_controller;pos_update;30,0[0m
-[33m70;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m70;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[32m70;17;mobility_controller;pos_update;160,0[0m
-[33m70;17;mobility_controller;;pos:(170,0) sigma:5[0m
-[33m75;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m75;5;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
-[32m75;8;mobility_controller;pos_update;40,0[0m
-[33m75;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[32m75;12;mobility_controller;pos_update;30,0[0m
-[33m75;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m75;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[32m75;17;mobility_controller;pos_update;170,0[0m
-[33m75;17;mobility_controller;;pos:(180,0) sigma:5[0m
-[33m80;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m80;5;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
-[32m80;8;mobility_controller;pos_update;40,0[0m
-[33m80;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[32m80;12;mobility_controller;pos_update;30,0[0m
-[33m80;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m80;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[32m80;17;mobility_controller;pos_update;180,0[0m
-[33m80;17;mobility_controller;;pos:(190,0) sigma:5[0m
-[33m85;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m85;5;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
-[32m85;8;mobility_controller;pos_update;40,0[0m
-[33m85;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[32m85;12;mobility_controller;pos_update;30,0[0m
-[33m85;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m85;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[32m85;17;mobility_controller;pos_update;190,0[0m
-[33m85;17;mobility_controller;;pos:(200,0) sigma:5[0m
-[33m90;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m90;5;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
-[32m90;8;mobility_controller;pos_update;40,0[0m
-[33m90;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[32m90;12;mobility_controller;pos_update;30,0[0m
-[33m90;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m90;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[32m90;17;mobility_controller;pos_update;200,0[0m
-[33m90;17;mobility_controller;;pos:(210,0) sigma:5[0m
-[33m95;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m95;5;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
-[32m95;8;mobility_controller;pos_update;40,0[0m
-[33m95;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[32m95;12;mobility_controller;pos_update;30,0[0m
-[33m95;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m95;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[32m95;17;mobility_controller;pos_update;210,0[0m
-[33m95;17;mobility_controller;;pos:(220,0) sigma:5[0m
-[33m100;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m100;5;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
-[32m100;8;mobility_controller;pos_update;40,0[0m
-[33m100;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[32m100;12;mobility_controller;pos_update;30,0[0m
-[33m100;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m100;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[32m100;17;mobility_controller;pos_update;220,0[0m
-[33m100;17;mobility_controller;;pos:(230,0) sigma:5[0m
-[33m105;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m105;5;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
-[32m105;8;mobility_controller;pos_update;40,0[0m
-[33m105;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[32m105;12;mobility_controller;pos_update;30,0[0m
-[33m105;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m105;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[32m105;17;mobility_controller;pos_update;230,0[0m
-[33m105;17;mobility_controller;;pos:(240,0) sigma:5[0m
-[33m110;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m110;5;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
-[32m110;8;mobility_controller;pos_update;40,0[0m
-[33m110;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[32m110;12;mobility_controller;pos_update;30,0[0m
-[33m110;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m110;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[32m110;17;mobility_controller;pos_update;240,0[0m
-[33m110;17;mobility_controller;;pos:(250,0) sigma:5[0m
-[33m115;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m115;5;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
-[32m115;8;mobility_controller;pos_update;40,0[0m
-[33m115;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[32m115;12;mobility_controller;pos_update;30,0[0m
-[33m115;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m115;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[32m115;17;mobility_controller;pos_update;250,0[0m
-[33m115;17;mobility_controller;;pos:(260,0) sigma:5[0m
-[33m120;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m120;5;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
-[32m120;8;mobility_controller;pos_update;40,0[0m
-[33m120;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[33m120;9;sensor_module;;sensing:true sigma:5[0m
-[32m120;12;mobility_controller;pos_update;30,0[0m
-[33m120;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m120;13;sensor_module;;sensing:true sigma:5[0m
-[33m120;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[32m120;17;mobility_controller;pos_update;260,0[0m
-[33m120;17;mobility_controller;;pos:(270,0) sigma:5[0m
-[33m120;18;sensor_module;;sensing:true sigma:5[0m
-[32m120;19;mission_task_generator;task_assigned;1[0m
-[33m120;19;mission_task_generator;;sigma:60[0m
-[33m125;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m125;5;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
-[33m125;7;comm_node;;transmitting:true mode:direct relay_target:-1 pending:1 sigma:1[0m
-[32m125;8;mobility_controller;pos_update;40,0[0m
-[33m125;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[32m125;9;sensor_module;data_packet;1[0m
-[33m125;9;sensor_module;;sensing:false sigma:inf[0m
-[33m125;11;comm_node;;transmitting:true mode:direct relay_target:-1 pending:1 sigma:1[0m
-[32m125;12;mobility_controller;pos_update;30,0[0m
-[33m125;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[32m125;13;sensor_module;data_packet;1[0m
-[33m125;13;sensor_module;;sensing:false sigma:inf[0m
-[33m125;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[33m125;16;comm_node;;transmitting:true mode:relay relay_target:1 pending:1 sigma:1[0m
-[32m125;17;mobility_controller;pos_update;270,0[0m
-[33m125;17;mobility_controller;;pos:(280,0) sigma:5[0m
-[32m125;18;sensor_module;data_packet;1[0m
-[33m125;18;sensor_module;;sensing:false sigma:inf[0m
-[33m126;4;nl1;;phase:Forwarding stable:Available sigma:0[0m
-[33m126;5;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
-[32m126;7;comm_node;tx_out;1[0m
-[33m126;7;comm_node;;transmitting:false mode:direct relay_target:-1 pending:1 sigma:inf[0m
-[32m126;11;comm_node;tx_out;1[0m
-[33m126;11;comm_node;;transmitting:false mode:direct relay_target:-1 pending:1 sigma:inf[0m
-[33m126;14;nl2;;phase:Forwarding stable:Available sigma:0[0m
-[32m126;16;comm_node;tx_out;1[0m
-[33m126;16;comm_node;;transmitting:false mode:relay relay_target:1 pending:1 sigma:inf[0m
+[32m66;3;nl1;rx_packet;1[0m
+[33m66;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[32m66;13;nl2;rx_packet;1[0m
+[33m66;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[33m70;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m70;4;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
+[32m70;7;mobility_controller;pos_update;40,0[0m
+[33m70;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[32m70;11;mobility_controller;pos_update;30,0[0m
+[33m70;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m70;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[32m70;16;mobility_controller;pos_update;160,0[0m
+[33m70;16;mobility_controller;;pos:(170,0) sigma:5[0m
+[33m75;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m75;4;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
+[32m75;7;mobility_controller;pos_update;40,0[0m
+[33m75;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[32m75;11;mobility_controller;pos_update;30,0[0m
+[33m75;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m75;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[32m75;16;mobility_controller;pos_update;170,0[0m
+[33m75;16;mobility_controller;;pos:(180,0) sigma:5[0m
+[33m80;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m80;4;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
+[32m80;7;mobility_controller;pos_update;40,0[0m
+[33m80;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[32m80;11;mobility_controller;pos_update;30,0[0m
+[33m80;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m80;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[32m80;16;mobility_controller;pos_update;180,0[0m
+[33m80;16;mobility_controller;;pos:(190,0) sigma:5[0m
+[33m85;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m85;4;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
+[32m85;7;mobility_controller;pos_update;40,0[0m
+[33m85;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[32m85;11;mobility_controller;pos_update;30,0[0m
+[33m85;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m85;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[32m85;16;mobility_controller;pos_update;190,0[0m
+[33m85;16;mobility_controller;;pos:(200,0) sigma:5[0m
+[33m90;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m90;4;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
+[32m90;7;mobility_controller;pos_update;40,0[0m
+[33m90;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[32m90;11;mobility_controller;pos_update;30,0[0m
+[33m90;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m90;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[32m90;16;mobility_controller;pos_update;200,0[0m
+[33m90;16;mobility_controller;;pos:(210,0) sigma:5[0m
+[33m95;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m95;4;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
+[32m95;7;mobility_controller;pos_update;40,0[0m
+[33m95;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[32m95;11;mobility_controller;pos_update;30,0[0m
+[33m95;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m95;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[32m95;16;mobility_controller;pos_update;210,0[0m
+[33m95;16;mobility_controller;;pos:(220,0) sigma:5[0m
+[33m100;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m100;4;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
+[32m100;7;mobility_controller;pos_update;40,0[0m
+[33m100;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[32m100;11;mobility_controller;pos_update;30,0[0m
+[33m100;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m100;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[32m100;16;mobility_controller;pos_update;220,0[0m
+[33m100;16;mobility_controller;;pos:(230,0) sigma:5[0m
+[33m105;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m105;4;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
+[32m105;7;mobility_controller;pos_update;40,0[0m
+[33m105;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[32m105;11;mobility_controller;pos_update;30,0[0m
+[33m105;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m105;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[32m105;16;mobility_controller;pos_update;230,0[0m
+[33m105;16;mobility_controller;;pos:(240,0) sigma:5[0m
+[33m110;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m110;4;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
+[32m110;7;mobility_controller;pos_update;40,0[0m
+[33m110;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[32m110;11;mobility_controller;pos_update;30,0[0m
+[33m110;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m110;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[32m110;16;mobility_controller;pos_update;240,0[0m
+[33m110;16;mobility_controller;;pos:(250,0) sigma:5[0m
+[33m115;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m115;4;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
+[32m115;7;mobility_controller;pos_update;40,0[0m
+[33m115;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[32m115;11;mobility_controller;pos_update;30,0[0m
+[33m115;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m115;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[32m115;16;mobility_controller;pos_update;250,0[0m
+[33m115;16;mobility_controller;;pos:(260,0) sigma:5[0m
+[33m120;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m120;4;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
+[32m120;7;mobility_controller;pos_update;40,0[0m
+[33m120;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[33m120;8;sensor_module;;sensing:true sigma:5[0m
+[32m120;11;mobility_controller;pos_update;30,0[0m
+[33m120;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m120;12;sensor_module;;sensing:true sigma:5[0m
+[33m120;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[32m120;16;mobility_controller;pos_update;260,0[0m
+[33m120;16;mobility_controller;;pos:(270,0) sigma:5[0m
+[33m120;17;sensor_module;;sensing:true sigma:5[0m
+[32m120;18;mission_task_generator;task_assigned;1[0m
+[33m120;18;mission_task_generator;;sigma:60[0m
+[33m125;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m125;4;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
+[33m125;6;comm_node;;transmitting:true mode:direct relay_target:-1 pending:1 sigma:1[0m
+[32m125;7;mobility_controller;pos_update;40,0[0m
+[33m125;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[32m125;8;sensor_module;data_packet;1[0m
+[33m125;8;sensor_module;;sensing:false sigma:inf[0m
+[33m125;10;comm_node;;transmitting:true mode:direct relay_target:-1 pending:1 sigma:1[0m
+[32m125;11;mobility_controller;pos_update;30,0[0m
+[33m125;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[32m125;12;sensor_module;data_packet;1[0m
+[33m125;12;sensor_module;;sensing:false sigma:inf[0m
+[33m125;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[33m125;15;comm_node;;transmitting:true mode:direct relay_target:-1 pending:1 sigma:1[0m
+[32m125;16;mobility_controller;pos_update;270,0[0m
+[33m125;16;mobility_controller;;pos:(280,0) sigma:5[0m
+[32m125;17;sensor_module;data_packet;1[0m
+[33m125;17;sensor_module;;sensing:false sigma:inf[0m
+[33m126;3;nl1;;phase:Forwarding stable:Available sigma:0[0m
+[33m126;4;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
+[32m126;6;comm_node;tx_out;1[0m
+[33m126;6;comm_node;;transmitting:false mode:direct relay_target:-1 pending:1 sigma:inf[0m
+[32m126;10;comm_node;tx_out;1[0m
+[33m126;10;comm_node;;transmitting:false mode:direct relay_target:-1 pending:1 sigma:inf[0m
+[33m126;13;nl2;;phase:Forwarding stable:Available sigma:0[0m
+[32m126;15;comm_node;tx_out;1[0m
+[33m126;15;comm_node;;transmitting:false mode:direct relay_target:-1 pending:1 sigma:inf[0m
 [33m126;1;ground_station_aggregator;;count:4 reporting:true sigma:0[0m
-[32m126;4;nl1;rx_packet;1[0m
-[33m126;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[32m126;14;nl2;rx_packet;1[0m
-[33m126;14;nl2;;phase:Available stable:Available sigma:inf[0m
+[32m126;3;nl1;rx_packet;1[0m
+[33m126;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[32m126;13;nl2;rx_packet;1[0m
+[33m126;13;nl2;;phase:Available stable:Available sigma:inf[0m
 [32m126;1;ground_station_aggregator;task_completed;1[0m
 [33m126;1;ground_station_aggregator;;count:0 reporting:false sigma:inf[0m
-[33m126;19;mission_task_generator;;sigma:54[0m
-[33m130;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m130;5;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
-[32m130;8;mobility_controller;pos_update;40,0[0m
-[33m130;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[32m130;12;mobility_controller;pos_update;30,0[0m
-[33m130;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m130;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[32m130;17;mobility_controller;pos_update;280,0[0m
-[33m130;17;mobility_controller;;pos:(290,0) sigma:5[0m
-[33m135;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m135;5;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
-[32m135;8;mobility_controller;pos_update;40,0[0m
-[33m135;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[32m135;12;mobility_controller;pos_update;30,0[0m
-[33m135;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m135;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[32m135;17;mobility_controller;pos_update;290,0[0m
-[33m135;17;mobility_controller;;pos:(300,0) sigma:5[0m
-[33m140;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m140;5;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
-[32m140;8;mobility_controller;pos_update;40,0[0m
-[33m140;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[32m140;12;mobility_controller;pos_update;30,0[0m
-[33m140;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m140;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[32m140;17;mobility_controller;pos_update;300,0[0m
-[33m140;17;mobility_controller;;pos:(310,0) sigma:5[0m
-[33m145;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m145;5;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
-[32m145;8;mobility_controller;pos_update;40,0[0m
-[33m145;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[32m145;12;mobility_controller;pos_update;30,0[0m
-[33m145;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m145;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[32m145;17;mobility_controller;pos_update;310,0[0m
-[33m145;17;mobility_controller;;pos:(320,0) sigma:5[0m
-[33m150;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m150;5;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
-[32m150;8;mobility_controller;pos_update;40,0[0m
-[33m150;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[32m150;12;mobility_controller;pos_update;30,0[0m
-[33m150;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m150;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[32m150;17;mobility_controller;pos_update;320,0[0m
-[33m150;17;mobility_controller;;pos:(330,0) sigma:5[0m
-[33m155;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m155;5;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
-[32m155;8;mobility_controller;pos_update;40,0[0m
-[33m155;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[32m155;12;mobility_controller;pos_update;30,0[0m
-[33m155;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m155;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[32m155;17;mobility_controller;pos_update;330,0[0m
-[33m155;17;mobility_controller;;pos:(340,0) sigma:5[0m
-[33m160;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m160;5;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
-[32m160;8;mobility_controller;pos_update;40,0[0m
-[33m160;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[32m160;12;mobility_controller;pos_update;30,0[0m
-[33m160;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m160;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[32m160;17;mobility_controller;pos_update;340,0[0m
-[33m160;17;mobility_controller;;pos:(350,0) sigma:5[0m
-[33m165;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m165;5;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
-[32m165;8;mobility_controller;pos_update;40,0[0m
-[33m165;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[32m165;12;mobility_controller;pos_update;30,0[0m
-[33m165;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m165;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[32m165;17;mobility_controller;pos_update;350,0[0m
-[33m165;17;mobility_controller;;pos:(360,0) sigma:5[0m
-[33m170;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m170;5;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
-[32m170;8;mobility_controller;pos_update;40,0[0m
-[33m170;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[32m170;12;mobility_controller;pos_update;30,0[0m
-[33m170;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m170;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[32m170;17;mobility_controller;pos_update;360,0[0m
-[33m170;17;mobility_controller;;pos:(370,0) sigma:5[0m
-[33m175;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m175;5;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
-[32m175;8;mobility_controller;pos_update;40,0[0m
-[33m175;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[32m175;12;mobility_controller;pos_update;30,0[0m
-[33m175;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m175;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[32m175;17;mobility_controller;pos_update;370,0[0m
-[33m175;17;mobility_controller;;pos:(380,0) sigma:5[0m
-[33m180;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m180;5;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
-[32m180;8;mobility_controller;pos_update;40,0[0m
-[33m180;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[33m180;9;sensor_module;;sensing:true sigma:5[0m
-[32m180;12;mobility_controller;pos_update;30,0[0m
-[33m180;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m180;13;sensor_module;;sensing:true sigma:5[0m
-[33m180;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[32m180;17;mobility_controller;pos_update;380,0[0m
-[33m180;17;mobility_controller;;pos:(390,0) sigma:5[0m
-[33m180;18;sensor_module;;sensing:true sigma:5[0m
-[32m180;19;mission_task_generator;task_assigned;1[0m
-[33m180;19;mission_task_generator;;sigma:60[0m
-[33m185;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m185;5;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
-[33m185;7;comm_node;;transmitting:true mode:direct relay_target:-1 pending:1 sigma:1[0m
-[32m185;8;mobility_controller;pos_update;40,0[0m
-[33m185;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[32m185;9;sensor_module;data_packet;1[0m
-[33m185;9;sensor_module;;sensing:false sigma:inf[0m
-[33m185;11;comm_node;;transmitting:true mode:direct relay_target:-1 pending:1 sigma:1[0m
-[32m185;12;mobility_controller;pos_update;30,0[0m
-[33m185;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[32m185;13;sensor_module;data_packet;1[0m
-[33m185;13;sensor_module;;sensing:false sigma:inf[0m
-[33m185;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[33m185;16;comm_node;;transmitting:true mode:relay relay_target:1 pending:1 sigma:1[0m
-[32m185;17;mobility_controller;pos_update;390,0[0m
-[33m185;17;mobility_controller;;pos:(400,0) sigma:5[0m
-[32m185;18;sensor_module;data_packet;1[0m
-[33m185;18;sensor_module;;sensing:false sigma:inf[0m
-[33m186;4;nl1;;phase:Forwarding stable:Available sigma:0[0m
-[33m186;5;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
-[32m186;7;comm_node;tx_out;1[0m
-[33m186;7;comm_node;;transmitting:false mode:direct relay_target:-1 pending:1 sigma:inf[0m
-[32m186;11;comm_node;tx_out;1[0m
-[33m186;11;comm_node;;transmitting:false mode:direct relay_target:-1 pending:1 sigma:inf[0m
-[33m186;14;nl2;;phase:Forwarding stable:Available sigma:0[0m
-[32m186;16;comm_node;tx_out;1[0m
-[33m186;16;comm_node;;transmitting:false mode:relay relay_target:1 pending:1 sigma:inf[0m
+[33m126;18;mission_task_generator;;sigma:54[0m
+[33m130;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m130;4;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
+[32m130;7;mobility_controller;pos_update;40,0[0m
+[33m130;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[32m130;11;mobility_controller;pos_update;30,0[0m
+[33m130;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m130;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[32m130;16;mobility_controller;pos_update;280,0[0m
+[33m130;16;mobility_controller;;pos:(290,0) sigma:5[0m
+[33m135;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m135;4;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
+[32m135;7;mobility_controller;pos_update;40,0[0m
+[33m135;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[32m135;11;mobility_controller;pos_update;30,0[0m
+[33m135;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m135;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[32m135;16;mobility_controller;pos_update;290,0[0m
+[33m135;16;mobility_controller;;pos:(300,0) sigma:5[0m
+[33m140;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m140;4;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
+[32m140;7;mobility_controller;pos_update;40,0[0m
+[33m140;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[32m140;11;mobility_controller;pos_update;30,0[0m
+[33m140;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m140;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[32m140;16;mobility_controller;pos_update;300,0[0m
+[33m140;16;mobility_controller;;pos:(310,0) sigma:5[0m
+[33m145;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m145;4;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
+[32m145;7;mobility_controller;pos_update;40,0[0m
+[33m145;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[32m145;11;mobility_controller;pos_update;30,0[0m
+[33m145;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m145;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[32m145;16;mobility_controller;pos_update;310,0[0m
+[33m145;16;mobility_controller;;pos:(320,0) sigma:5[0m
+[33m150;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m150;4;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
+[32m150;7;mobility_controller;pos_update;40,0[0m
+[33m150;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[32m150;11;mobility_controller;pos_update;30,0[0m
+[33m150;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m150;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[32m150;16;mobility_controller;pos_update;320,0[0m
+[33m150;16;mobility_controller;;pos:(330,0) sigma:5[0m
+[33m155;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m155;4;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
+[32m155;7;mobility_controller;pos_update;40,0[0m
+[33m155;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[32m155;11;mobility_controller;pos_update;30,0[0m
+[33m155;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m155;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[32m155;16;mobility_controller;pos_update;330,0[0m
+[33m155;16;mobility_controller;;pos:(340,0) sigma:5[0m
+[33m160;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m160;4;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
+[32m160;7;mobility_controller;pos_update;40,0[0m
+[33m160;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[32m160;11;mobility_controller;pos_update;30,0[0m
+[33m160;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m160;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[32m160;16;mobility_controller;pos_update;340,0[0m
+[33m160;16;mobility_controller;;pos:(350,0) sigma:5[0m
+[33m165;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m165;4;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
+[32m165;7;mobility_controller;pos_update;40,0[0m
+[33m165;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[32m165;11;mobility_controller;pos_update;30,0[0m
+[33m165;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m165;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[32m165;16;mobility_controller;pos_update;350,0[0m
+[33m165;16;mobility_controller;;pos:(360,0) sigma:5[0m
+[33m170;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m170;4;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
+[32m170;7;mobility_controller;pos_update;40,0[0m
+[33m170;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[32m170;11;mobility_controller;pos_update;30,0[0m
+[33m170;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m170;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[32m170;16;mobility_controller;pos_update;360,0[0m
+[33m170;16;mobility_controller;;pos:(370,0) sigma:5[0m
+[33m175;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m175;4;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
+[32m175;7;mobility_controller;pos_update;40,0[0m
+[33m175;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[32m175;11;mobility_controller;pos_update;30,0[0m
+[33m175;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m175;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[32m175;16;mobility_controller;pos_update;370,0[0m
+[33m175;16;mobility_controller;;pos:(380,0) sigma:5[0m
+[33m180;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m180;4;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
+[32m180;7;mobility_controller;pos_update;40,0[0m
+[33m180;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[33m180;8;sensor_module;;sensing:true sigma:5[0m
+[32m180;11;mobility_controller;pos_update;30,0[0m
+[33m180;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m180;12;sensor_module;;sensing:true sigma:5[0m
+[33m180;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[32m180;16;mobility_controller;pos_update;380,0[0m
+[33m180;16;mobility_controller;;pos:(390,0) sigma:5[0m
+[33m180;17;sensor_module;;sensing:true sigma:5[0m
+[32m180;18;mission_task_generator;task_assigned;1[0m
+[33m180;18;mission_task_generator;;sigma:60[0m
+[33m185;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m185;4;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
+[33m185;6;comm_node;;transmitting:true mode:direct relay_target:-1 pending:1 sigma:1[0m
+[32m185;7;mobility_controller;pos_update;40,0[0m
+[33m185;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[32m185;8;sensor_module;data_packet;1[0m
+[33m185;8;sensor_module;;sensing:false sigma:inf[0m
+[33m185;10;comm_node;;transmitting:true mode:direct relay_target:-1 pending:1 sigma:1[0m
+[32m185;11;mobility_controller;pos_update;30,0[0m
+[33m185;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[32m185;12;sensor_module;data_packet;1[0m
+[33m185;12;sensor_module;;sensing:false sigma:inf[0m
+[33m185;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[33m185;15;comm_node;;transmitting:true mode:direct relay_target:-1 pending:1 sigma:1[0m
+[32m185;16;mobility_controller;pos_update;390,0[0m
+[33m185;16;mobility_controller;;pos:(400,0) sigma:5[0m
+[32m185;17;sensor_module;data_packet;1[0m
+[33m185;17;sensor_module;;sensing:false sigma:inf[0m
+[33m186;3;nl1;;phase:Forwarding stable:Available sigma:0[0m
+[33m186;4;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
+[32m186;6;comm_node;tx_out;1[0m
+[33m186;6;comm_node;;transmitting:false mode:direct relay_target:-1 pending:1 sigma:inf[0m
+[32m186;10;comm_node;tx_out;1[0m
+[33m186;10;comm_node;;transmitting:false mode:direct relay_target:-1 pending:1 sigma:inf[0m
+[33m186;13;nl2;;phase:Forwarding stable:Available sigma:0[0m
+[32m186;15;comm_node;tx_out;1[0m
+[33m186;15;comm_node;;transmitting:false mode:direct relay_target:-1 pending:1 sigma:inf[0m
 [33m186;1;ground_station_aggregator;;count:2 reporting:false sigma:inf[0m
-[32m186;4;nl1;rx_packet;1[0m
-[33m186;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[32m186;14;nl2;rx_packet;1[0m
-[33m186;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[33m190;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m190;5;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
-[32m190;8;mobility_controller;pos_update;40,0[0m
-[33m190;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[32m190;12;mobility_controller;pos_update;30,0[0m
-[33m190;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m190;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[32m190;17;mobility_controller;pos_update;400,0[0m
-[33m190;17;mobility_controller;;pos:(410,0) sigma:5[0m
-[33m195;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m195;5;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
-[32m195;8;mobility_controller;pos_update;40,0[0m
-[33m195;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[32m195;12;mobility_controller;pos_update;30,0[0m
-[33m195;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m195;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[32m195;17;mobility_controller;pos_update;410,0[0m
-[33m195;17;mobility_controller;;pos:(420,0) sigma:5[0m
+[32m186;3;nl1;rx_packet;1[0m
+[33m186;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[32m186;13;nl2;rx_packet;1[0m
+[33m186;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[33m190;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m190;4;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
+[32m190;7;mobility_controller;pos_update;40,0[0m
+[33m190;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[32m190;11;mobility_controller;pos_update;30,0[0m
+[33m190;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m190;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[32m190;16;mobility_controller;pos_update;400,0[0m
+[33m190;16;mobility_controller;;pos:(410,0) sigma:5[0m
+[33m195;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m195;4;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
+[32m195;7;mobility_controller;pos_update;40,0[0m
+[33m195;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[32m195;11;mobility_controller;pos_update;30,0[0m
+[33m195;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m195;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[32m195;16;mobility_controller;pos_update;410,0[0m
+[33m195;16;mobility_controller;;pos:(420,0) sigma:5[0m
 [33m195;1;ground_station_aggregator;;count:2 reporting:false sigma:inf[0m
-[33m195;3;handoff_coordinator;;issuing:false affected:-1 relay:-1 sigma:inf[0m
-[33m195;4;nl1;;phase:Available stable:Available sigma:inf[0m
-[33m195;5;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
-[33m195;7;comm_node;;transmitting:false mode:direct relay_target:-1 pending:1 sigma:inf[0m
-[33m195;8;mobility_controller;;pos:(40,0) sigma:5[0m
-[33m195;9;sensor_module;;sensing:false sigma:inf[0m
-[33m195;11;comm_node;;transmitting:false mode:direct relay_target:-1 pending:1 sigma:inf[0m
-[33m195;12;mobility_controller;;pos:(30,0) sigma:5[0m
-[33m195;13;sensor_module;;sensing:false sigma:inf[0m
-[33m195;14;nl2;;phase:Available stable:Available sigma:inf[0m
-[33m195;16;comm_node;;transmitting:false mode:relay relay_target:1 pending:1 sigma:inf[0m
-[33m195;17;mobility_controller;;pos:(420,0) sigma:5[0m
-[33m195;18;sensor_module;;sensing:false sigma:inf[0m
-[33m195;19;mission_task_generator;;sigma:60[0m
+[33m195;3;nl1;;phase:Available stable:Available sigma:inf[0m
+[33m195;4;nl0;;phase:Disconnected stable:Disconnected sigma:inf[0m
+[33m195;6;comm_node;;transmitting:false mode:direct relay_target:-1 pending:1 sigma:inf[0m
+[33m195;7;mobility_controller;;pos:(40,0) sigma:5[0m
+[33m195;8;sensor_module;;sensing:false sigma:inf[0m
+[33m195;10;comm_node;;transmitting:false mode:direct relay_target:-1 pending:1 sigma:inf[0m
+[33m195;11;mobility_controller;;pos:(30,0) sigma:5[0m
+[33m195;12;sensor_module;;sensing:false sigma:inf[0m
+[33m195;13;nl2;;phase:Available stable:Available sigma:inf[0m
+[33m195;15;comm_node;;transmitting:false mode:direct relay_target:-1 pending:1 sigma:inf[0m
+[33m195;16;mobility_controller;;pos:(420,0) sigma:5[0m
+[33m195;17;sensor_module;;sensing:false sigma:inf[0m
+[33m195;18;mission_task_generator;;sigma:60[0m
