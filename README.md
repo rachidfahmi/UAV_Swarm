@@ -137,11 +137,11 @@ To run an individual experiment instead of using `run_experiments.sh`:
 ```bash
 source build_sim.sh
 ./bin/UAV_Swarm > logs/my_run.log
-
+```
 Log Format
-
+```bash
 time ; model_id ; model_name ; port_name ; data
-
+```
 
 Verifying Results
 
