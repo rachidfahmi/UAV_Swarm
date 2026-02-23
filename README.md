@@ -154,6 +154,17 @@ Key events to check in the logs:
 | handoff_in fired     | t=46          | exp3_with_handoff.log |
 | First task_completed | t=126         | exp2 and exp3         |
 
+## Notes on Relay Behavior
+
+Relay mode updates a communication flag inside the affected UAV’s Communication Node. However, the structural couplings in the CommunicationCluster remain static, meaning packets are still routed through their original NetworkLink model.
+
+As a result, relay mode validates the detection and control logic but does not implement dynamic two-hop rerouting. Supporting true relay routing would require structural changes to the coupling configuration and is identified as future work.
+
+Documentation
+
+     - UAV-Swarm-DEVS-Simulation-Report.pdf — Full modeling, implementation, and experimental analysis
+
+     - DEVSmodelsForm.md — Formal DEVS model and port descriptions EOF
 
 
 
