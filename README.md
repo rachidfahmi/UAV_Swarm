@@ -50,40 +50,42 @@ The system is implemented as a four-level DEVS hierarchy:
 
 ## Repository Structure
 
+```text
 UAV_Swarm/
 ├── main/
-│ ├── main.cpp # Entry point
-│ ├── include/
-│ │ ├── atomics/ # 7 atomic model headers
-│ │ │ ├── mission_task_generator.hpp
-│ │ │ ├── uav_sensor_module.hpp
-│ │ │ ├── uav_mobility_controller.hpp
-│ │ │ ├── uav_comm_node.hpp
-│ │ │ ├── network_link_model.hpp
-│ │ │ ├── handoff_coordinator.hpp
-│ │ │ └── ground_station_aggregator.hpp
-│ │ └── coupled/ # Coupled model headers
-│ │ ├── mobile_uav_node.hpp
-│ │ ├── communication_cluster.hpp
-│ │ ├── communication_cluster_no_handoff.hpp
-│ │ ├── mission_system.hpp
-│ │ └── mission_system_no_handoff.hpp
-├── logs/ # Simulation output logs
-│ ├── exp1a_mission_task_generator.log
-│ ├── exp1b_uav_sensor_module.log
-│ ├── exp1c_network_link_model.log
-│ ├── exp1d_ground_station_aggregator.log
-│ ├── exp1e_handoff_coordinator.log
-│ ├── exp1f_uav_comm_node.log
-│ ├── exp1g_uav_mobility_controller.log
-│ ├── exp2_baseline_no_handoff.log
-│ └── exp3_with_handoff.log
-├── build/ # CMake build directory
-├── bin/ # Compiled executable
+│   ├── main.cpp                 # Entry point
+│   └── include/
+│       ├── atomics/
+│       │   ├── mission_task_generator.hpp
+│       │   ├── uav_sensor_module.hpp
+│       │   ├── uav_mobility_controller.hpp
+│       │   ├── uav_comm_node.hpp
+│       │   ├── network_link_model.hpp
+│       │   ├── handoff_coordinator.hpp
+│       │   └── ground_station_aggregator.hpp
+│       └── coupled/
+│           ├── mobile_uav_node.hpp
+│           ├── communication_cluster.hpp
+│           ├── communication_cluster_no_handoff.hpp
+│           ├── mission_system.hpp
+│           └── mission_system_no_handoff.hpp
+├── logs/
+│   ├── exp1a_mission_task_generator.log
+│   ├── exp1b_uav_sensor_module.log
+│   ├── exp1c_network_link_model.log
+│   ├── exp1d_ground_station_aggregator.log
+│   ├── exp1e_handoff_coordinator.log
+│   ├── exp1f_uav_comm_node.log
+│   ├── exp1g_uav_mobility_controller.log
+│   ├── exp2_baseline_no_handoff.log
+│   └── exp3_with_handoff.log
 ├── CMakeLists.txt
-├── build_sim.sh # Build script
-├── run_experiments.sh # Runs all 3 experiments
-└── UAV-Swarm-DEVS-Simulation-Report.pdf # Final report
+├── build_sim.sh
+├── run_experiments.sh
+├── DEVSmodelsForm.md
+├── UAV-Swarm-DEVS-Simulation-Report.pdf
+└── README.md
+```
 
 
 ---
