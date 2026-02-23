@@ -122,16 +122,19 @@ This runs:
 | Exp 2         | Baseline — no handoff        | logs/exp2_baseline_no_handoff.log |
 | Exp 3         | With handoff                 | logs/exp3_with_handoff.log        |
 
-To run a specific configuration manually:
+## Running a Specific Configuration Manually
 
-Edit main/main.cpp and instantiate:
+To run an individual experiment instead of using `run_experiments.sh`:
 
-MissionSystemNoHandoff for Experiment 2
+1. Open `main/main.cpp`
+2. Instantiate the desired top-level model:
 
-MissionSystem for Experiment 3
+   - `MissionSystemNoHandoff` → for **Experiment 2 (Baseline)**
+   - `MissionSystem` → for **Experiment 3 (With Handoff)**
 
-Rebuild and execute:
+3. Rebuild and execute:
 
+```bash
 source build_sim.sh
 ./bin/UAV_Swarm > logs/my_run.log
 
