@@ -102,18 +102,18 @@ Cadmium v2 must be cloned at `~/cadmium_v2` or the path updated in `CMakeLists.t
 
 ## Build Instructions
 
-bash
+```bash
 git clone https://github.com/rachidfahmi/UAV_Swarm.git
 cd UAV_Swarm
 source build_sim.sh
-
+```
 Running the Experiments
 
 Run all experiments at once and save logs:
 
-bash
+```bash
 ./run_experiments.sh
-
+```
 
 This runs:
 | Script target | Experiment                   | Output log                        |
