@@ -164,7 +164,7 @@ Documentation
 
      - UAV-Swarm-DEVS-Simulation-Report.pdf — Full modeling, implementation, and experimental analysis
 
-     - DEVSmodelsForm.md — Formal DEVS model and port descriptions EOF
+     - DEVSmodelsForm.md — Formal DEVS model and port descriptions.
 
 
 
